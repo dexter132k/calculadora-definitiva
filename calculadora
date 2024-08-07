@@ -1,3 +1,16 @@
+
+def calcular(self, operacao, valor):
+        if operacao == 'adicionar':
+            return self.adicionar(valor)
+        elif operacao == 'subtrair':
+            return self.subtrair(valor)
+        elif operacao == 'multiplicar':
+            return self.multiplicar(valor)
+        elif operacao == 'dividir':
+            return self.dividir(valor)
+        else:
+            return "Operação inválida"
+            
 class Calculadora:
     def __init__(self):
         self.resultado = 0
@@ -20,3 +33,4 @@ class Calculadora:
         else:
             return "Erro: Divisão por zero"
         return self.resultado
+        main

@@ -1,4 +1,16 @@
 
+# Função principal para interação com o usuário
+def main():
+    calc = Calculadora()
+    
+    while True:
+        print("\nEscolha a operação:")
+        print("1: Adicionar")
+        print("2: Subtrair")
+        print("3: Multiplicar")
+        print("4: Dividir")
+        print("5: Sair")
+       
 def calcular(self, operacao, valor):
         if operacao == 'adicionar':
             return self.adicionar(valor)

@@ -1,4 +1,23 @@
 
+escolha = input("Digite o número da operação desejada: ")
+        
+        if escolha == '5':
+            print("Saindo...")
+            break
+        
+        if escolha in ['1', '2', '3', '4']:
+            valor = float(input("Digite o valor: "))
+            operacoes = {'1': 'adicionar', '2': 'subtrair', '3': 'multiplicar', '4': 'dividir'}
+            resultado = calc.calcular(operacoes[escolha], valor)
+            print(f"Resultado: {resultado}")
+        else:
+            print("Escolha inválida. Tente novamente.")
+
+if __name__ == "__main__":
+    main()
+                                                                                                                                
+
+
 # Função principal para interação com o usuário
 def main():
     calc = Calculadora()
